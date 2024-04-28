@@ -1,0 +1,6 @@
+access-list 4 permit 192.15.0.0 0.0.255.255
+access-list 4 permit 192.16.4.4 0.0.0.0
+access-list 4 deny 192.16.0.0 0.0.255.255
+access-list 4 permit 192.17.0.0 0.0.255.255
+interface EO
+ip access-group 4 out

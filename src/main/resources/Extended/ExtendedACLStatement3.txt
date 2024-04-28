@@ -1,0 +1,5 @@
+access-list 103 permit udp 192.15.22.5 0.0.0.0 172.17.0.0 0.0.255.255 eq 53
+access-list 103 permit ip 172.17.62.12 0.0.0.0 172.17.10.1 0.0.0.0
+access-list 103 deny ip 172.17.62.12 0.0.0.0 172.0.0.0 0.255.255.255
+interface EO
+ip access-group 103 out

@@ -1,0 +1,5 @@
+access-list 5 deny 170.16.10.5 0.0.0.0
+access-list 5 deny 170.16.4.0 0.0.0.255
+access-list 5 permit 170.16.0.0 0.0.255.255
+interface EO
+ip access-group 5 out

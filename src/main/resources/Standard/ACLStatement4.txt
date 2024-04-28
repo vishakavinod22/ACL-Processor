@@ -1,0 +1,5 @@
+access-list 6 deny 170.16.10.5 0.0.0.0
+access-list 6 deny 192.17.20.0 0.0.0.255
+access-list 6 permit any
+interface EO
+ip access-group 6 out

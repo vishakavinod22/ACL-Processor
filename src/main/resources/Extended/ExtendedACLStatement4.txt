@@ -1,0 +1,4 @@
+access-list 104 deny tcp 170.16.10.5 0.0.0.0 170.16.70.0 0.0.0.255 eq 23
+access-list 104 permit ip any any
+interface EO
+ip access-group 104 out
